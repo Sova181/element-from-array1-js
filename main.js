@@ -1,9 +1,9 @@
 function get(array, index, defaultValue = null) {
     if(array.at(index) !== undefined ){
-       console.log(  array.at(index) );
+       return   array.at(index) 
     }
     else {
-        console.log(  defaultValue);
+        return   defaultValue
     }
   }
   const cities = ['moscow', 'london', 'berlin', 'porto', '', null, undefined]; 
