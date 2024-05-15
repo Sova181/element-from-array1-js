@@ -1,4 +1,4 @@
-export default function get(array, index, defaultValue = null) {
+function get (array, index, defaultValue = null) {
     if(array.at(index) !== undefined ){
        return   array.at(index) 
     }
@@ -6,4 +6,5 @@ export default function get(array, index, defaultValue = null) {
         return   defaultValue
     }
   }
-//  const cities = ['moscow', 'london', 'berlin', 'porto', '', null, undefined]; 
+  //const cities = ['moscow', 'london', 'berlin', 'porto', '', null, undefined]; 
+module.exports = get;
