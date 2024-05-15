@@ -16,11 +16,12 @@ console.log(get(cities, 7)); // null
 */
 
 const func = require('./func_get');
-let cities = ['moscow', 'london', 'berlin', 'porto', '', null, undefined]; 
-console.log(10, 'paris')
-console.log(1)
-console.log(4)
-console.log(-1, 'oops')
-console.log(5, 'oops')
-console.log(6, 'oops')
-console.log(7)
+const cities = ['moscow', 'london', 'berlin', 'porto', '', null, undefined]; 
+
+console.log(func(cities, 1)); // 'london'
+console.log(func(cities, 4)); // ''
+console.log(func(cities, 10, 'paris')); // 'paris'
+console.log(func(cities, -1, 'oops')); // 'oops'
+console.log(func(cities, 5, 'oops')); // null
+console.log(func(cities, 7)); // null  
+console.log(func(cities, 6, 'oops')); // undefined ??

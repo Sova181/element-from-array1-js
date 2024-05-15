@@ -6,5 +6,5 @@ function get (array, index, defaultValue = null) {
         return   defaultValue
     }
   }
-  //const cities = ['moscow', 'london', 'berlin', 'porto', '', null, undefined]; 
-module.exports = get;
+
+module.exports = get 
