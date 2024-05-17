@@ -1,5 +1,5 @@
 function get (array, index, defaultValue = null) {
-    if(array.at(index) !== undefined ){
+    if(index >= 0 && index < array.length  || index < 0 && -index <= array.length){
        return   array.at(index) 
     }
     else {
