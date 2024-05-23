@@ -1,10 +1,11 @@
-function get (array, index, defaultValue = null) {
-    if(index >= 0 && index < array.length  || index < 0 && -index <= array.length){
-       return   array.at(index) 
-    }
-    else {
-        return   defaultValue
-    }
+function get(array, index, defaultValue = null) {
+  let result = defaultValue;
+
+  if (index < array.length && index >= 0) {
+    result = array[index];
   }
 
-module.exports = get 
+  return result;
+}
+
+module.exports = get;
